@@ -31,10 +31,10 @@
 
 <% } else { %>
 
-  <script src="<%- config.root %><%- item.img_js %>"></script>
+  <script src="<%= item.img_js %>"></script>
   <%- js('js/masonry.js') %>
-  <script src="<%- config.root %>/js/viewer.js"></script>
-  <link href="<%- config.root %>/css/viewer.css" rel="stylesheet">
+  <script src="/js/viewer.js"></script>
+  <link href="/css/viewer.css" rel="stylesheet">
   <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
 
   <input id="rootUrl" hidden type="text" value="<%= config.root %>"> </input>
@@ -53,7 +53,7 @@
     const masonry = new Masonry($container)
     // 图片地址 后面加时间戳是为了避免缓存
     // viewer 没有动态刷新功能，所以一定要进行动态刷新 update()
-    masonry.init(viewer, $("#rootUrl").val())
+    masonry.init(viewer, '')
 
   </script>
 <% } %>
