@@ -1,8 +1,12 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="viewport" content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0,user-scalable=no;">
 
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  <meta name="format-detection" content="telephone=no">
   <!-- Title -->
   <%
       var title = [];
@@ -13,7 +17,7 @@
   <title><%= title.join(' - ') %></title>
 
   <!--Favicon-->
-  <link rel="icon" href="favicon/favicon.ico">
+  <link rel="icon" href="/favicon/favicon.ico">
   
   <!--Description-->
   <% if (page.description){ %>
@@ -47,3 +51,17 @@
   <!-- Google Analytics -->
   <%- partial('google-analytics') %>
 </head>
+<script>
+  console.log(`_________         _________ _        _          ______   _______  _______  _       
+\\__   __/|\\     /|\\__   __/( (    /|| \\    /\\  (  ___ \\ (  ___  )(  ____ \\| \\    /\\
+   ) (   | )   ( |   ) (   |  \\  ( ||  \\  / /  | (   ) )| (   ) || (    \\/|  \\  / /
+   | |   | (___) |   | |   |   \\ | ||  (_/ /   | (__/ / | (___) || |      |  (_/ / 
+   | |   |  ___  |   | |   | (\\ \\) ||   _ (    |  __ (  |  ___  || |      |   _ (  
+   | |   | (   ) |   | |   | | \\   ||  ( \\ \\   | (  \\ \\ | (   ) || |      |  ( \\ \\ 
+   | |   | )   ( |___) (___| )  \\  ||  /  \\ \\  | )___) )| )   ( || (____/\\|  /  \\ \\
+   )_(   |/     \\|\\_______/|/    )_)|_/    \\/  |/ \\___/ |/     \\|(_______/|_/    \\/
+                                                                                   
+
+  欢迎来到PC的图片分享网站             
+                                                                                   `)
+</script>
